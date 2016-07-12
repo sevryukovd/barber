@@ -1,0 +1,67 @@
+@import "global/normalize.less";
+@import "global/outlines.less";
+@import "blocks/page-header.less";
+@import "blocks/main-nav.less";
+@import "blocks/promo-stats.less";
+@import "blocks/advantages.less";
+
+@bg-darkgrey: #292929;
+@mobile-widths-only: ~"(max-width: 767px)";
+@tablet-widths: ~"(min-width: 768px)";
+@desktop-widths: ~"(min-width: 1200px)";
+
+body {
+  margin: 0;
+  padding: 0;
+ 
+  font-size: 18px;
+  line-height: 27px;
+  font-family: Arial, sans-serif;
+  color: #f7f4f1;
+  font-style: normal;
+
+  background-color: @bg-darkgrey;
+}
+
+
+.clearfix {
+  &:after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 640px;
+  }
+
+  @media @desktop-widths {
+    width: 960px;
+  }
+}
+
+body {
+  padding: 6px;
+  background: @bg-darkgrey url("img/bb-mobile.png") no-repeat center top / 720px auto;
+  min-height: 2555px;
+}
+
+@media @tablet-widths {
+  body {
+    background: @bg-darkgrey url("img/bb-tablet.png") no-repeat center top / 1178px auto;
+    min-height: 2400px;
+  }
+}
+
+@media @desktop-widths {
+  body {
+    background: @bg-darkgrey url("img/bb-desktop.png") no-repeat center top / 1391px auto;
+    min-height: 2250px;
+  }
+}

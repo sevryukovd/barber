@@ -1,0 +1,42 @@
+.advantages__wrapper {
+  .container;
+  padding-top: 30px;
+}
+
+.advantages__item {
+  margin-bottom: 23px;
+  padding: 0 44px;
+  padding-top: 125px;
+}
+
+.advantages__item:nth-child(n+2) {
+  display: none;
+}
+
+@media @tablet-widths {
+  
+  .advantages__wrapper {
+    padding-top: 42px;
+  }
+
+  .advantages__items {
+    padding-bottom: 4px;
+  }
+  
+  .advantages__item {
+    margin: 0 30px;
+    margin-bottom: 40px;
+    padding: 0;
+    padding-bottom: 39px;
+    padding-left: 128px;
+  }
+  
+  .advantages__item:nth-child(n+2) {
+    display: block;
+  }
+  
+  .advantages__item:last-child {
+    margin-bottom: 0;
+  }
+
+}
