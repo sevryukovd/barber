@@ -8,6 +8,7 @@
 @import "blocks/reviews.less";
 @import "blocks/page-footer.less";
 @bg-darkgrey: #292929;
+@bg-lightgrey: #f8f5f2;
 @mobile-widths-only: ~"(max-width: 767px)";
 @tablet-widths: ~"(min-width: 768px)";
 @desktop-widths: ~"(min-width: 1200px)";
@@ -79,4 +80,39 @@ body {
     background: @bg-darkgrey url("img/bb-desktop.png") no-repeat center top / 1391px auto;
     min-height: 2250px;
   }
+}
+.slider-nav {
+  font-size: 0;
+  text-align: center;
+  line-height: 20px;
+}
+
+.slider-nav__btn {
+  position: relative;
+
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin: 0 13px;
+
+  border: 1px solid #ffffff;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.slider-nav__btn::after {
+  content: "";
+
+  position: absolute;
+  top: -10px;
+  left: -10px;
+
+  width: 25px;
+  height: 25px;
+
+  transform: rotate(-45deg);
+}
+
+.slider-nav__btn--active {
+  background-color: #ffffff;
 }
