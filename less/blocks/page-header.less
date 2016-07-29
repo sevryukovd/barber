@@ -13,16 +13,18 @@
 @media @tablet-widths {
 
   .page-header {
-    position: relative;
+    display: flex;
+    flex-direction: column;
 
-    min-height: 70px;
-    padding-bottom: 397px;
+    min-height: auto;
+    /*padding-bottom: 397px;*/
     
     background-color: #000000;
   }
 
   .page-header__logo {
-    position: absolute;
+    order: 2;
+    position: relative;
     bottom: 0;
 
     width: 100%;
@@ -51,7 +53,7 @@
 @media @desktop-widths {
 
   .page-header {
-    padding-bottom: 648px;
+    /*padding-bottom: 648px;*/
   }
 
   .page-header__logo {

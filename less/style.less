@@ -7,6 +7,7 @@
 @import "blocks/news.less";
 @import "blocks/reviews.less";
 @import "blocks/page-footer.less";
+
 @bg-darkgrey: #292929;
 @bg-lightgrey: #f8f5f2;
 @mobile-widths-only: ~"(max-width: 767px)";
@@ -39,6 +40,27 @@ body {
   background-color: @bg-darkgrey;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: block;
+  padding: 13px 29px 11px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: none;
+
+  background-color: transparent;
+  border: 1px solid #e5ddd5;
+}
 
 .clearfix {
   &:after {
@@ -62,24 +84,15 @@ body {
   }
 }
 
-body {
-  padding: 6px;
-  background: @bg-darkgrey url("img/bb-mobile.png") no-repeat center top / 720px auto;
-  min-height: 2555px;
-}
+.container-fluid () {
+  width: auto;
 
-@media @tablet-widths {
-  body {
-    background: @bg-darkgrey url("img/bb-tablet.png") no-repeat center top / 1178px auto;
-    min-height: 2400px;
+  @media @tablet-widths {
+    width: 84%;
+    max-width: 960px;
+    margin: 0 auto;
   }
-}
 
-@media @desktop-widths {
-  body {
-    background: @bg-darkgrey url("img/bb-desktop.png") no-repeat center top / 1391px auto;
-    min-height: 2250px;
-  }
 }
 .slider-nav {
   font-size: 0;
